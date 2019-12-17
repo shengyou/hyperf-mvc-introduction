@@ -34,7 +34,10 @@
         "hyperf/pool": "~1.1.0",
         "hyperf/process": "~1.1.0",
         "hyperf/redis": "~1.1.0",
-        "hyperf/utils": "~1.1.0"
+        "hyperf/utils": "~1.1.0",
+        "hyperf/view": "^1.1",
+        "duncan3dc/blade": "^4.8",
+        "hyperf/task": "^1.1"
     },
     "require-dev": {
         "swoft/swoole-ide-helper": "^4.2",
