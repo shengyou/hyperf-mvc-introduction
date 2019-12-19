@@ -78,7 +78,7 @@
 
             <div class="panel-body">
                 <!-- 建立新 Task 表單 -->
-                <form action="" method="POST" class="form-horizontal">
+                <form action="/tasks" method="POST" class="form-horizontal">
                     <!-- Task 名稱 -->
                     <div class="form-group">
                         <label for="task-name" class="col-sm-3 control-label">Task</label>

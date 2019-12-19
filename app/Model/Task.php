@@ -25,6 +25,10 @@ class Task extends Model
         'completed',
     ];
 
+    protected $attributes = [
+        'completed' => false,
+    ];
+
     /**
      * The attributes that should be cast to native types.
      *
