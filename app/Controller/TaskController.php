@@ -38,4 +38,12 @@ class TaskController
 
         return $response->redirect('/');
     }
+
+    public function destroy(int $id, ResponseInterface $response)
+    {
+        $task = Task::find($id);
+        $task->delete();
+
+        return $response->redirect('/');
+    }
 }

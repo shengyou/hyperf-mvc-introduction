@@ -132,7 +132,7 @@
                             </form>
                             @endif
                             <!-- 刪除 Task 按鈕 -->
-                            <form action="" method="POST" style="display: inline-block">
+                            <form action="/tasks/{{ $task->id }}/delete" method="POST" style="display: inline-block">
                                 <button type="submit" class="btn btn-danger">
                                     <i class="fa fa-trash"></i>刪除
                                 </button>
