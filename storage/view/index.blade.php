@@ -115,19 +115,22 @@
                     </tr>
                     </thead>
                     <tbody>
+                    @foreach($tasks as $task)
                     <tr>
                         <td class="table-text">
-                            <div class="check">
-                                Task 標題
+                            <div class="{{ ($task->completed)? 'check' : '' }}">
+                                {{ $task->title }}
                             </div>
                         </td>
                         <td>
+                            @if (!$task->completed)
                             <!-- 完成 Task 按鈕 -->
                             <form action="" method="POST" style="display: inline-block">
                                 <button type="submit" class="btn btn-success">
                                     <i class="fa fa-check"></i>完成
                                 </button>
                             </form>
+                            @endif
                             <!-- 刪除 Task 按鈕 -->
                             <form action="" method="POST" style="display: inline-block">
                                 <button type="submit" class="btn btn-danger">
@@ -136,6 +139,7 @@
                             </form>
                         </td>
                     </tr>
+                    @endforeach
                     </tbody>
                 </table>
             </div>
