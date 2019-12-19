@@ -28,4 +28,14 @@ class TaskController
 
         return $response->redirect('/');
     }
+
+    public function update(int $id, ResponseInterface $response)
+    {
+        $task = Task::find($id);
+        $task->update([
+            'completed' => true,
+        ]);
+
+        return $response->redirect('/');
+    }
 }
